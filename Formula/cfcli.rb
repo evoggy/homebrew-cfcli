@@ -24,11 +24,6 @@ class Cfcli < Formula
     end
   end
 
-  # Disable bottle requirement - we provide pre-built binaries
-  def pour_bottle?
-    false
-  end
-
   def install
     bin.install "cfcli"
   end
