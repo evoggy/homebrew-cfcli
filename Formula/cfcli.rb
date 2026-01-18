@@ -4,6 +4,8 @@ class Cfcli < Formula
   version "0.5.0"
   license "MIT OR Apache-2.0"
 
+  bottle :unneeded
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/evoggy/cfcli/releases/download/0.5.0/cfcli-aarch64-apple-darwin.tar.gz"
