@@ -4,8 +4,6 @@ class Cfcli < Formula
   version "0.5.0"
   license "MIT OR Apache-2.0"
 
-  bottle :unneeded
-
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/evoggy/cfcli/releases/download/0.5.0/cfcli-aarch64-apple-darwin.tar.gz"
@@ -24,6 +22,11 @@ class Cfcli < Formula
       url "https://github.com/evoggy/cfcli/releases/download/0.5.0/cfcli-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "bab6e0f562c0c42530e21d3ce69de64286b5c6d35d951b619b6177fe86c6e6ff"
     end
+  end
+
+  # Disable bottle requirement - we provide pre-built binaries
+  def pour_bottle?
+    false
   end
 
   def install
