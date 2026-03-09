@@ -1,26 +1,26 @@
 class Cfcli < Formula
   desc "CLI tool for Crazyflie drones"
   homepage "https://github.com/evoggy/cfcli"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT OR Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/evoggy/cfcli/releases/download/0.6.0/cfcli-aarch64-apple-darwin.tar.gz"
-      sha256 "772c70ce7128b46abc1d9c37da0e98fb918e63caa52fe6ded87771126b541cf3"
+      url "https://github.com/evoggy/cfcli/releases/download/0.6.1/cfcli-aarch64-apple-darwin.tar.gz"
+      sha256 "9f275785ae3374eab504f1255681a59520073d109ffb4d7c926158036fe4a32d"
     else
-      url "https://github.com/evoggy/cfcli/releases/download/0.6.0/cfcli-x86_64-apple-darwin.tar.gz"
-      sha256 "965642d1915671a8d7bd414b89e511a86d21024cf3fb66f2e7f6395273dd6fed"
+      url "https://github.com/evoggy/cfcli/releases/download/0.6.1/cfcli-x86_64-apple-darwin.tar.gz"
+      sha256 "3fec275e0d80986ab52d59cba403bee5ed151c1377de112aaa7d3800b69e474a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/evoggy/cfcli/releases/download/0.6.0/cfcli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a6d70414d091d3acd24321f27aadcffb8a081e1ef5cc5c7352a33c849eb09989"
+      url "https://github.com/evoggy/cfcli/releases/download/0.6.1/cfcli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "54bc60ba5dd46d52fa01a264d60007ca41253f2d0f97a47ddef18c7ddf388f7e"
     else
-      url "https://github.com/evoggy/cfcli/releases/download/0.6.0/cfcli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ead21aa33d602799b425dd1ab211079b469d69c409767ade95366bbd9de8eedf"
+      url "https://github.com/evoggy/cfcli/releases/download/0.6.1/cfcli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b1e8e6c30b6678981108af8b86023c675878a7b10ff9d977d8342aeeccac6b61"
     end
   end
 
